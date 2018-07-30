@@ -1,9 +1,10 @@
-#Date 25/07/2017
-#Author :- Mayur Vijay Raichura
+# Date 25/07/2017
+# Author :- Mayur Vijay Raichura
 # This script can be use if a command gives "final status is 0" and this cannot be use if it showing something different on successful run 
-#Also you should not use this script if you want to run the job in background . If you want to do so then give that command as last command.
-#Also this script will not give output on standard output for some commands . If you want to check the progress of a command then you can check the log file of that command or you can check the file "exit_status" which is the copy of log file of corresponding command . This file will be deteted and will be regenerated for next command.
-
+# Also you should not use this script if you want to run the job in background . If you want to do so then give that command as last command.
+# Also this script will not give output on standard output for some commands . If you want to check the progress of a command then you can check the log file of that command or you can check the file "exit_status" which is the copy of log file of corresponding command . This file will be deteted and will be regenerated for next command.
+# This script will automatically send the on complition of the command.
+# you have to provide valid sender and receiver mail ID.
 
 #!/usr/bin/perl
 $command[0] = "simbuild -dut hcp ";
